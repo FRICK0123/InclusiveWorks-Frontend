@@ -1,0 +1,542 @@
+/*
+    STYLES FOR THIS CSS FILE
+    navbar
+    Accessibility Tools
+    Pointer
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --dominant:#007BFF;
+    --background: #E6F4F1;
+    --darker_dominant:#00238E;
+    --orange:#FFC107;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navbar*/
+nav{
+    background: var(--dominant);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+a.inclusive-brand{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: clamp(20px,2vw,30px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    line-height: 10px;
+}
+
+.link-label{
+    color: #FFF;
+    font-size: clamp(10px,2vw,16px);
+}
+
+.link-label-menu {
+    color: black;
+    font-size: clamp(10px, 2vw, 16px);
+}
+
+.links li a{
+    padding: 25px 25px;
+}
+
+.links li a:hover{
+    background-color: black;
+}
+
+.links li a:focus {
+    background-color: black;
+    /* Add an outline to indicate focus */
+}
+
+.accessibility-tools a{
+    padding: 15px;
+}
+
+.accessibility-tools a:focus {
+    background-color: black;
+    /* Add an outline to indicate focus */
+}
+
+.accessibility-tools:hover{
+    background-color: black;
+}
+
+/*Sidebar*/
+.sidebar-close{
+    line-height: 5px;
+}
+
+/*Toggle switches for accessibility tools */
+/*Pointer Switch*/
+.pointer-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.pointer-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#pointer:checked+.slider {
+    background-color: #2196F3;
+}
+
+#pointer:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Screen Reader Switch*/
+.screen-reader-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.screen-reader-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#screen-reader:checked+.slider {
+    background-color: #2196F3;
+}
+
+#screen-reader:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Font Customization Switch*/
+.font-custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.font-custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#font-custom:checked+.slider {
+    background-color: #2196F3;
+}
+
+#font-custom:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*High Contrast Switch*/
+.high-contrast-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.high-contrast-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#high-contrast:checked+.slider {
+    background-color: #2196F3;
+}
+
+#high-contrast:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Menu Sidebar Styles for medium size screen*/
+/*Pointer Switch*/
+.menu-pointer-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.menu-pointer-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#menu-pointer:checked+.slider {
+    background-color: #2196F3;
+}
+
+#menu-pointer:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Screen Reader Switch*/
+.menu-screen-reader-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.menu-screen-reader-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#menu-screen-reader:checked+.slider {
+    background-color: #2196F3;
+}
+
+#menu-screen-reader:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Font Customization Switch*/
+.menu-font-custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.menu-font-custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#menu-font-custom:checked+.slider {
+    background-color: #2196F3;
+}
+
+#menu-font-custom:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*High Contrast Switch*/
+.menu-high-contrast-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.menu-high-contrast-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+#menu-high-contrast:checked+.slider {
+    background-color: #2196F3;
+}
+
+#menu-high-contrast:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/*Tools Lists*/
+.tools-lists{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tools-lists li{
+    padding: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.tools-lists li:hover {
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+}
+
+.tools-lists a {
+    padding: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.tools-lists a:hover {
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+}
+
+/*Navbar End*/

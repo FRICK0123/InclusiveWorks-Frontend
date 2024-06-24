@@ -1,0 +1,158 @@
+Navbar:
+	background: #007BFF;
+
+Inclusiveworks text logo:
+color: #FFF;
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+links:
+display: flex;
+width: 648px;
+height: 70.876px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+
+links_icon:
+width: 45px;
+height: 45px;
+flex-shrink: 0;
+
+links_text:
+color: #FFF;
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+Welcome_Message:
+color: #1E1E1E;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+Login_button:
+display: flex;
+width: 234px;
+height: 86px;
+padding: 14px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #00238E;
+/* Button Shadow */
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+Register_Button:
+display: flex;
+width: 234px;
+height: 86px;
+padding: 14px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFC107;
+/* Button Shadow */
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+Inclusive_image:
+width: 666px;
+height: 666px;
+flex-shrink: 0;
+
+How it works:
+color: #000;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+Pwd Job Seekers text:
+color: #000;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+PWD cards:
+width: 310px;
+height: 310px;
+flex-shrink: 0;
+background-color:#007BFF;
+
+Employers card:
+width: 310px;
+height: 310px;
+flex-shrink: 0;
+background-color:#FFC107;
+
+card icon size:
+width: 94px;
+height: 96.343px;
+flex-shrink: 0;
+
+Numbers size:
+color: #FFF;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+card size:
+color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+
+Accessibility sidebar:
+
+Close button Icon:
+width: 90px;
+height: 90px;
+flex-shrink: 0;
+
+button label:
+color: #000;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+Accessibility text:
+color: #000;
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+Toggle button size:
+width: 79px;
+height: 79px;
+flex-shrink: 0;
+
+toggle labels:
+color: #000;
+font-family: Roboto;
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
