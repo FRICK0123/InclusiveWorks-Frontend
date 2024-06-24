@@ -538,5 +538,22 @@ a.inclusive-brand{
     background-color: rgba(0, 0, 0, 0.623);
     color: white;
 }
-
 /*Navbar End*/
+
+/*First Section Welcome Message*/
+.welcome-message{
+    color: #1E1E1E;
+    font-size: clamp(30px,3vw,40px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    border-bottom: 5px solid #FFC107;
+    padding-bottom: 10px;
+}
+
+.img-fluid{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 50%;
+}
