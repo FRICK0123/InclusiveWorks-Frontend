@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /*Navbar*/
@@ -551,9 +552,119 @@ a.inclusive-brand{
     padding-bottom: 10px;
 }
 
-.img-fluid{
+.cover-vector{
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
         border-radius: 50%;
+}
+
+.login-btn{
+    width: 20vw;
+    border: none;
+    height: 86px;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    color: white;
+    background-color: #00238E;
+    font-size: 20px;
+    font-weight: 500;
+    grid-column: 1/2;
+}
+
+.login-btn:hover{
+    background-color: #2352e2;
+}
+
+.register-btn{
+    width: 20vw;
+    border: none;
+    height: 86px;
+    padding: 14px 24px;
+    gap: 8px;
+    border-radius: 8px;
+    background: #FFC107;
+    font-size: 20px;
+    font-weight: 500;
+    grid-column: 4/5;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-btn:hover {
+    background-color: #a8810d;
+}
+
+.welcome-btn{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px auto;
+}
+
+@media (max-width: 620px){
+    .login-btn{
+        width: 100%;
+        grid-column: 1/5;
+    }
+
+    .register-btn{
+        width: 100%;
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+}
+/*First Section End*/
+
+/*Second Section*/
+.how-it-works-heading{
+    color: #000;
+    font-size: clamp(30px, 3vw, 40px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 5px solid #FFC107;
+    padding-bottom: 10px;
+}
+
+.pwd-process-heading{
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pwd-process-heading h3{
+    font-size: clamp(20px, 3vw, 30px);
+    border-bottom: 5px solid #FFC107;
+    padding-bottom: 10px;
+}
+
+/*Cards*/
+.pwdcards{
+    width: 300px;
+    height: 290px;
+    flex-shrink: 0;
+    background-color: #007BFF;
+    border-radius: 20px;
+}
+
+.employercards{
+    width: 300px;
+    height: 290px;
+    flex-shrink: 0;
+    background-color: #FFC107;
+    border-radius: 20px;
+    color: black;
+}
+
+.employer-process-heading h3 {
+    font-size: clamp(20px, 3vw, 30px);
+    border-bottom: 5px solid #007BFF;
+    padding-bottom: 10px;
 }
