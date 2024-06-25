@@ -652,6 +652,7 @@ a.inclusive-brand{
     flex-shrink: 0;
     background-color: #007BFF;
     border-radius: 20px;
+    border: 1px solid black;
 }
 
 .employercards{
@@ -661,10 +662,87 @@ a.inclusive-brand{
     background-color: #FFC107;
     border-radius: 20px;
     color: black;
+    border: 1px solid black;
 }
 
 .employer-process-heading h3 {
     font-size: clamp(20px, 3vw, 30px);
     border-bottom: 5px solid #007BFF;
     padding-bottom: 10px;
+}
+
+@media (max-width: 991px){
+    .pwdcards,.employercards{
+        width: 230px;
+    }
+}
+
+/*Registration of both parties styles*/
+
+.pwd-register-card{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    min-height: 100%;
+}
+
+.pwd-register-card img {
+    max-height: 200px;
+    /* Set the maximum height for images */
+    object-fit: contain;
+    /* Ensures the image scales down without distortion */
+    width: 100%;
+    /* Ensures images take up full width of their container */
+}
+
+.pwd-register-btn{
+    width: 75%;
+    border: none;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: black;
+    background-color: #FFC107;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pwd-register-btn:hover{
+    background-color: #a8810d;
+}
+
+.employer-register-card {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    min-height: 100%;
+}
+
+.employer-register-card img {
+    max-height: 200px;
+    /* Set the maximum height for images */
+    object-fit: contain;
+    /* Ensures the image scales down without distortion */
+    width: 100%;
+    /* Ensures images take up full width of their container */
+}
+
+.employer-register-btn {
+    width: 75%;
+    border: none;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #00238E;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.employer-register-btn:hover {
+    background-color: #2352e2;
 }
