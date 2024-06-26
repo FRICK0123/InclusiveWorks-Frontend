@@ -234,7 +234,7 @@
                     Redefining Inclusion in the Workplace
                 </h2>
                 <div class="container welcome-btn">
-                    <button class="login-btn">Login</button>
+                    <a href="users/loginform.html" class="login-btn">Login</a>
                     <a href="#register-section" class="register-btn">Register</a>
                 </div>
             </div>
@@ -393,5 +393,18 @@
 
     <!--Javascript-->
     <script src="script.js"></script>
+
+    <script>
+        let highContrast = document.getElementById('high-contrast');
+        document.getElementById('high-contrast-list').addEventListener('click',()=>{
+            if(highContrast.checked == true){
+                localStorage.setItem("highContrastCond","true");
+                console.log('On');
+            } else {
+                console.log('off');
+                localStorage.setItem("highContrastCond", "false");
+            }
+        });
+    </script>
 </body>
 </html>

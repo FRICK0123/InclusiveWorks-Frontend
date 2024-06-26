@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Login</title>
 
     <link rel="stylesheet" href="../main-style.css">
 
@@ -23,45 +23,7 @@
     <header>
         <nav>
             <!--Brand-->
-            <a href="#" class="navbar-brand inclusive-brand ms-3" tabindex="1">InclusiveWorks</a>
-
-            <!--Links-->
-            <ul class="links d-none d-lg-flex">
-                <li class="nav-item text-center">
-                    <a href="../index.html" class="nav-link">
-                        <img src="../images/icons/house.svg" alt="Home Icon" width="40">
-                        <p class="link-label">Home</p>
-                    </a>
-                </li>
-
-                <li class="nav-item text-center">
-                    <a href="../index.html#how-it-works" class="nav-link">
-                        <img src="../images/icons/user-gear.svg" alt="Home Icon" width="40">
-                        <p class="link-label">How it Works?</p>
-                    </a>
-                </li>
-
-                <li class="nav-item text-center">
-                    <a href="tools-info.html" class="nav-link">
-                        <img src="../images/icons/wrench.svg" alt="Home Icon" width="40">
-                        <p class="link-label">Tools Description</p>
-                    </a>
-                </li>
-
-                <li class="nav-item text-center">
-                    <a href="about.html" class="nav-link">
-                        <img src="../images/icons/question.svg" alt="Home Icon" width="40">
-                        <p class="link-label">About Us</p>
-                    </a>
-                </li>
-
-                <li class="nav-item text-center">
-                    <a href="contact.html" class="nav-link">
-                        <img src="../images/icons/phone.svg" alt="Home Icon" width="40">
-                        <p class="link-label">Contact Us</p>
-                    </a>
-                </li>
-            </ul>
+            <a href="../index.html" class="navbar-brand inclusive-brand ms-3" tabindex="1">InclusiveWorks</a>
 
             <!--Accessibility Tools Sidebar-->
             <div class="accessibility-tools text-center d-none d-lg-block sidebar" data-bs-toggle="offcanvas"
@@ -156,27 +118,6 @@
         </div>
         <div class="offcanvas-body p-0">
             <ul class="tools-lists">
-                <!--Links-->
-                <!--Home-->
-                <a href="../index.html" class="container-fluid d-flex justify-content-between align-items-center">
-                    <h4 class="">Home</h4>
-                </a>
-                <!--How it Works?-->
-                <a href="../index.html#how-it-works" class="container-fluid d-flex justify-content-between align-items-center">
-                    <h4 class="">How it Works?</h4>
-                </a>
-                <!--Tools Description-->
-                <a href="tools-info.html" class="container-fluid d-flex justify-content-between align-items-center">
-                    <h4 class="">Tools Description</h4>
-                </a>
-                <!--About Us-->
-                <a href="about.html" class="container-fluid d-flex justify-content-between align-items-center">
-                    <h4 class="">About Us</h4>
-                </a>
-                <!--Contact Us-->
-                <a href="contact.html" class="container-fluid d-flex justify-content-between align-items-center">
-                    <h4 class="">Contact Us</h4>
-                </a>
                 <!--Tools-->
                 <!--Menu Pointer-->
                 <li class="container-fluid d-flex justify-content-between align-items-center" aria-label="Pointer"
@@ -227,12 +168,20 @@
     </div>
     <!--Menu Sidebar Contents end-->
 
-    <section class="container d-flex justify-content-center align-items-center">
-        <h1 class="mt-5">Contact Page Under Construction...</h1>
-    </section>
-
     <!--Javascript-->
     <script src="../script.js"></script>
+
+    <script>
+        const highContrastCond = localStorage.getItem("highContrastCond");
+        let highContrast = document.getElementById('high-contrast');
+        if(highContrastCond == "true"){
+            highContrast.checked = true;
+            document.getElementById('high-contrast-off-on').innerHTML = "On";
+        } else {
+            highContrast = false;
+            document.getElementById('high-contrast-off-on').innerHTML = "Off";
+        }
+    </script>
 </body>
 
 </html>

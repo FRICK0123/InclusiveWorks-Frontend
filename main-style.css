@@ -573,6 +573,8 @@ a.inclusive-brand{
     font-size: 20px;
     font-weight: 500;
     grid-column: 1/2;
+    text-decoration: none;
+    display: flex;
 }
 
 .login-btn:hover{

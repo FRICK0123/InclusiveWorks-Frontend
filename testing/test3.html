@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2</title>
+</head>
+
+<body>
+    <a href="test.html">test1</a>
+    <a href="test2.html">test2</a>
+    <a href="test3.html">test3</a>
+
+    <input type="checkbox" id="check">
+    <p id="label">Off</p>
+
+    <script>
+        const getValue = localStorage.getItem("validate");
+        let label = document.getElementById('label');
+        let check = document.getElementById('check');
+
+        if (getValue == "true") {
+            check.checked = true;
+        }
+    </script>
+
+</body>
+
+</html>
