@@ -8,10 +8,12 @@
     main_login_username.addEventListener('click', () => {
         main_login_username.blur();
         login_username_overlay.style.display = "flex";
+        document.body.style.overflow = "hidden";
     });
 
     login_username_close.addEventListener('click', ()=>{
         login_username_overlay.style.display = 'none';
+        document.body.style.overflow = "auto";
     });
 
     login_username_submit.addEventListener('click', ()=>{
@@ -30,10 +32,12 @@
     main_login_password.addEventListener('click', () => {
         main_login_password.blur();
         login_password_overlay.style.display = "flex";
+        document.body.style.overflow = "hidden";
     });
 
     login_password_close.addEventListener('click', ()=>{
         login_password_overlay.style.display = 'none';
+        document.body.style.overflow = "auto";
     });
 
     login_password_submit.addEventListener('click', ()=>{
