@@ -667,14 +667,31 @@ a.inclusive-brand{
     border: 1px solid black;
 }
 
+.disabilities-cards {
+    width: 300px;
+    height: 290px;
+    flex-shrink: 0;
+    background-color: #007BFF;
+    border-radius: 20px;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 .employer-process-heading h3 {
     font-size: clamp(20px, 3vw, 30px);
     border-bottom: 5px solid #007BFF;
     padding-bottom: 10px;
 }
 
+.disabilities-process-heading h3 {
+    font-size: clamp(20px, 3vw, 30px);
+    border-bottom: 5px solid #FFC107;
+    padding-bottom: 10px;
+}
+
 @media (max-width: 991px){
-    .pwdcards,.employercards{
+    .pwdcards,.employercards, .disabilities-cards{
         width: 230px;
     }
 }

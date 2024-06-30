@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWD Jobseekers Registration</title>
+    <title>PWD Jobseekers Disabilities</title>
 
     <link rel="stylesheet" href="../main-style.css">
     <link rel="stylesheet" href="../styles/pwd-register.css">
@@ -21,22 +21,6 @@
 
 <body style="background-color:#E6F4F1;
 ;">
-    <!--Overlays for full screen input-->
-    <!--Firstname Overlay-->
-    <div class="pwd-firstname-overlay align-items-center" id="pwd-firstname-overlay">
-        <div id="pwd-firstname-close" class="text-center" tabindex="0">
-            <img src="../images/icons/x-circle-white.svg" alt="Close" width="50">
-            <label class="text-white" style="cursor: pointer;">Close</label>
-        </div>
-        <div class="container d-flex flex-column justify-content-center align-items-center">
-            <label for="overlay-pwd-firstname" class="form-label text-white fw-bold align-self-start">First Name</label>
-            <input type="text" class="form-control p-3" placeholder="Juan" id="overlay-pwd-firstname">
-            <button class="btn btn-primary mt-3 p-2 w-75" id="pwd-firstname-submit" type="submit">Submit</button>
-        </div>
-    </div>
-    <!--Firstname Overlay end-->
-
-    <!--Overlays for full screen input end-->
 
     <header>
         <nav>
@@ -184,31 +168,134 @@
 
         </div>
     </div>
+
     <!--Menu Sidebar Contents end-->
+        <section class="container-fluid mt-3">
+            <div class="disabilities-process-heading text-center d-flex flex-column justify-content-center">
+                <button class="btn btn-primary align-self-start p-3 fw-bold">Go Back</button>
+                <h3>What kind of Disabilities do you have?</h3>
+            </div>
+            <!--First Row-->
+            <div class="pwd-process row">
+                <div class="col-md-4 d-flex justify-content-center align-items-center mt-3">
+                    <label for="visual" class="text-center disabilities-cards" id="visual-card">
+                        <img src="../images/icons/visual-white.svg" alt="Person With Disabilities Create Profile Icon"
+                            width="80" class="img-fluid mt-3">
+                        <h4 class="mt-5 text-white">Visual Impairment</h4>
+                        <input type="radio" id="visual" class="d-none" name="disabilities">
+                        <button class="btn btn-primary w-50 p-2 mt-3 fw-bold text-white d-none" id="visual-btn">Next</button>
+                    </label>
+                </div>
+            
+                <div class="col-md-4 d-flex justify-content-center align-items-center mt-3">
+                    <label class="text-center disabilities-cards" id="mobility-card">
+                        <img src="../images/icons/mobility-white.svg" alt="Person With Disabilities Magnifying glass Icon" width="80"
+                            class="img-fluid mt-3">
+                        <h4 class="mt-5 text-white">Mobility Impairment</h4>
+                        <input type="radio" id="mobility" class="d-none" name="disabilities">
+                        <button class="btn btn-primary w-50 p-2 mt-3 fw-bold text-white d-none" id="mobility-btn">Next</button>
+                    </label>
+                </div>
+            
+                <div class="col-md-4 d-flex justify-content-center align-items-center mt-3">
+                    <label class="text-center disabilities-cards" id="hearing-card"> 
+                        <img src="../images/icons/hearing-white.svg" alt="Person With Disabilities Funnel Icon" width="80"
+                            class="img-fluid mt-3">
+                        <h4 class="mt-5 text-white">Hearing Impairment</h4>
+                        <input type="radio" id="hearing" class="d-none" name="disabilities">
+                        <button class="btn btn-primary w-50 p-2 mt-3 fw-bold text-white d-none" id="hearing-btn">Next</button>
+                    </label>
+                </div>
+            </div>
+            <!--Second Row-->
+            <div class="pwd-process row mt-md-5">
+                <div class="col-md-6 d-flex justify-content-center  mt-3">
+                    <label class="text-center disabilities-cards" id="speaking-card">
+                        <img src="../images/icons/speaking-white.svg" alt="Person With Disabilities Eye Icon" width="80"
+                            class="img-fluid mt-3">
+                        <h4 class="mt-5 text-white">Speaking Impairment</h4>
+                        <input type="radio" id="speaking" class="d-none" name="disabilities">
+                        <button class="btn btn-primary w-50 p-2 mt-3 fw-bold text-white d-none" id="speaking-btn">Next</button>
+                    </label>
+                </div>
+            
+                <div class="col-md-6 d-flex justify-content-center  mt-3">
+                    <label class="text-center disabilities-cards" id="learning-card">
+                        <img src="../images/icons/learning-white.svg" alt="Person With Disabilities Bried Case Icon" width="80"
+                            class="img-fluid mt-3">
+                        <h4 class="mt-5 text-white">Learning Impairment</h4>
+                        <input type="radio" id="learning" class="d-none" name="disabilities">
+                        <button class="btn btn-primary w-50 p-2 mt-3 fw-bold text-white d-none" id="learning-btn">Next</button>
+                    </label>
+                </div>
 
-    <!--PWD Professional registration Form-->
-    <section class="container-fluid mt-5">
-        <div class="container d-flex flex-column justify-content-center" id="form-container">
-            <h2 class="text-center">Job Seeker Professional Information</h2>
-            <form action="#" method="post">
-            <label for="pwd-address" class="form-label fw-bold">Address:</label>
-            <input type="text" name="pwd-email" id="pwd-address" placeholder="Address" class="form-control mb-3" required>
+                <input type="hidden" value="" id="input-data">
+            </div>
+            </section>
+        </section>
+    <!--Main Content-->
+    
+    <!--Disabilities Checkbox-->
+<script>
+    const disabilities = (card, checkbox, card_input, card_value, btn) => {
+        card.addEventListener('click', () => {
+            // Check the radio button and set the input value
+            checkbox.checked = true;
+            card_input.value = card_value;
 
-                <button class="btn btn-primary w-100 p-2 mb-3 fw-bold" type="submit"
-                    id="pwd-register-btn">Next</button>
-                <a href="../index.html" class="btn w-100 p-2 fw-bold" type="button" id="pwd-register-return-btn">Go
-                    back</a>
-            </form>
-        </div>
-    </section>
-    <!--PWD Professional registration Form End-->
+            // Reset all cards' styles
+            document.querySelectorAll('.disabilities-cards').forEach(c => {
+                c.style.backgroundColor = "#007BFF"; // Reset to default color
+                c.querySelector('button').classList.add('d-none'); // Hide button
+            });
+
+            // Highlight the selected card
+            card.style.backgroundColor = "#FFC107";
+            card.querySelector('button').classList.remove('d-none');
+        });
+
+        btn.addEventListener('click', () => {
+            alert(card_input.value);
+        });
+    };
+
+    let visual_card = document.getElementById('visual-card');
+    let visual = document.getElementById('visual');
+    let input_data = document.getElementById('input-data');
+
+    let mobility_card = document.getElementById('mobility-card');
+    let mobility = document.getElementById('mobility');
+
+    let hearing_card = document.getElementById('hearing-card');
+    let hearing = document.getElementById('hearing');
+
+    let speaking_card = document.getElementById('speaking-card');
+    let speaking = document.getElementById('speaking');
+
+    let learning_card = document.getElementById('learning-card');
+    let learning = document.getElementById('learning');
+
+    let visual_btn = document.getElementById('visual-btn');
+    let mobility_btn = document.getElementById('mobility-btn');
+    let hearing_btn = document.getElementById('hearing-btn');
+    let speaking_btn = document.getElementById('speaking-btn');
+    let learning_btn = document.getElementById('learning-btn');
+
+
+    disabilities(visual_card, visual, input_data, "visual", visual_btn);
+    disabilities(mobility_card, mobility, input_data, "mobility", mobility_btn);
+    disabilities(hearing_card, hearing, input_data, "hearing", hearing_btn);
+    disabilities(speaking_card, speaking, input_data, "speaking", speaking_btn);
+    disabilities(learning_card, learning, input_data, "learning", learning_btn);
+
+</script>
+
+
 
 
     <!--Javascript-->
     <script src="../script.js"></script>
 
-    <!--Overlay Functions-->
-    <script src="pwd-register.js"></script>
 
 </body>
 
